@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad Unidad 1 - JavaScript</title>
+  <link rel="stylesheet" href="desing.css">
+</head>
+<body>
+  <h1>Protocolo Colaborativo Unidad 1 - ED (JavaScript)</h1>
+
+  <div class="btn-container">
+    <button onclick="ejerciciosArreglos()">Ejecutar Arreglos</button>
+    <button onclick="ejerciciosMatrices()">Ejecutar Matrices</button>
+    <button id="darkModeBtn"> Dark/Ligth </button>
+  </div>
+
+  <h2>Salida:</h2>
+  <pre id="output"></pre>
+
+  <script src="arreglos.js"></script>
+  <script src="matrices.js"></script>
+  <script>
+    // Activar/desactivar Dark Mode
+    document.getElementById("darkModeBtn").addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+</html>
